@@ -60,7 +60,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 
 <!--~~ Static styles ~~-->
 <div id="styleArea">
-<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" data-tiddler-revision="0" data-tiddler-bag="default" type="text/css">/*
+<style data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">/*
 Basic styles used before we boot up the parsing engine
 */
 
@@ -161,6 +161,8 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/temp/info-plugin</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
@@ -168,6 +170,8 @@ Error message and password prompt
 <li>Coronavirus Vaccine</li>
 
 <li>New Tiddler</li>
+
+<li>testsave</li>
 
 </ul>
 </p>
@@ -183,7 +187,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22" revision="0" bag="default">
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" revision="0" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/Acknowledgements&quot;: {
@@ -9556,7 +9560,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200721113009194" modified="20200721113021069" title="$:/core/templates/static.tiddler.html" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200721113009194" modified="20200721113021069" revision="0" title="$:/core/templates/static.tiddler.html" type="text/vnd.tiddlywiki">
 <pre>\define tv-wikilink-template() $uri_doubleencoded$.html
 \define tv-config-toolbar-icons() no
 \define tv-config-toolbar-text() no
@@ -9591,22 +9595,22 @@ Error message and password prompt
 &lt;/html&gt;
 `</pre>
 </div>
-<div created="20200721115008161" modified="20200721115010368" title="$:/GitHub/Filename" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200721115008161" modified="20200721115010368" revision="0" title="$:/GitHub/Filename" type="text/vnd.tiddlywiki">
 <pre>index.html</pre>
 </div>
-<div created="20200721115007443" modified="20200721115007453" title="$:/GitHub/Path" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200721115007443" modified="20200721115007453" revision="0" title="$:/GitHub/Path" type="text/vnd.tiddlywiki">
 <pre>/</pre>
 </div>
-<div created="20200721114945171" modified="20200721114945181" title="$:/GitHub/Repo" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200721114945171" modified="20200721114945181" revision="0" title="$:/GitHub/Repo" type="text/vnd.tiddlywiki">
 <pre>ajshopov/newwiki</pre>
 </div>
-<div created="20200721114806262" modified="20200721114808449" title="$:/GitHub/Username" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200721114806262" modified="20200721114808449" revision="0" title="$:/GitHub/Username" type="text/vnd.tiddlywiki">
 <pre>ajshopov</pre>
 </div>
-<div title="$:/isEncrypted" revision="0" bag="default">
+<div bag="default" revision="0" title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div author="Joao Bolila" dependents="" description="Highlight.js syntax highlighting" list="readme usage howto license" name="Highlight" plugin-type="plugin" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.1.22" revision="0" bag="default">
+<div author="Joao Bolila" bag="default" dependents="" description="Highlight.js syntax highlighting" list="readme usage howto license" name="Highlight" plugin-type="plugin" revision="0" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/config/HighlightPlugin/TypeMappings/application/javascript&quot;: {
@@ -9676,13 +9680,71 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div title="$:/status/RequireReloadDueToPluginChange" revision="0" bag="default">
+<div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="GettingStarted" title="$:/StoryList" revision="1" bag="default">
+<div list="testsave" title="$:/StoryList">
 <pre></pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22" revision="0" bag="default">
+<div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/info/browser&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser&quot;,
+            &quot;text&quot;: &quot;yes&quot;
+        },
+        &quot;$:/info/node&quot;: {
+            &quot;title&quot;: &quot;$:/info/node&quot;,
+            &quot;text&quot;: &quot;no&quot;
+        },
+        &quot;$:/info/url/full&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/full&quot;,
+            &quot;text&quot;: &quot;https://ajshopov.github.io/newwiki/&quot;
+        },
+        &quot;$:/info/url/host&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/host&quot;,
+            &quot;text&quot;: &quot;ajshopov.github.io&quot;
+        },
+        &quot;$:/info/url/hostname&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
+            &quot;text&quot;: &quot;ajshopov.github.io&quot;
+        },
+        &quot;$:/info/url/protocol&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
+            &quot;text&quot;: &quot;https:&quot;
+        },
+        &quot;$:/info/url/port&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/port&quot;,
+            &quot;text&quot;: &quot;&quot;
+        },
+        &quot;$:/info/url/pathname&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
+            &quot;text&quot;: &quot;/newwiki/&quot;
+        },
+        &quot;$:/info/url/search&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/search&quot;,
+            &quot;text&quot;: &quot;&quot;
+        },
+        &quot;$:/info/url/origin&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/origin&quot;,
+            &quot;text&quot;: &quot;https://ajshopov.github.io&quot;
+        },
+        &quot;$:/info/browser/screen/width&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
+            &quot;text&quot;: &quot;1440&quot;
+        },
+        &quot;$:/info/browser/screen/height&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
+            &quot;text&quot;: &quot;900&quot;
+        },
+        &quot;$:/info/browser/language&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser/language&quot;,
+            &quot;text&quot;: &quot;en-US&quot;
+        }
+    }
+}</pre>
+</div>
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/themes/tiddlywiki/snowwhite/base&quot;: {
@@ -9693,7 +9755,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="Basic theme" name="Vanilla" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/vanilla" type="application/json" version="5.1.22" revision="0" bag="default">
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="" description="Basic theme" name="Vanilla" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/vanilla" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/themes/tiddlywiki/vanilla/themetweaks&quot;: {
@@ -9791,15 +9853,18 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200723075438193" modified="20200723080311471" title="Coronavirus Vaccine" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200723075438193" modified="20200723080311471" revision="0" title="Coronavirus Vaccine" type="text/vnd.tiddlywiki">
 <pre>Let me just give you one data point. ''In the last quarter century, there have only been seven, truly new vaccines introduced globally at the clinical practice. When I say new, that means that they were effective against a pathogen for which there had previously been no vaccine. They're only seven in the last quarter century, Merck has four, the rest of the world has three.'' I don't mean to boast. And there are lots of things that we've been working on since the eighties. We've been trying to get an HIV vaccine since the 1980s and we've been unsuccessful.
 
 Merck CEO Ken Frazier
 
 https://www.youtube.com/watch?v=KJMekwILAJo</pre>
 </div>
-<div created="20200721110836697" modified="20200721110840403" tags="" title="New Tiddler" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200721110836697" modified="20200721110840403" revision="0" tags="" title="New Tiddler" type="text/vnd.tiddlywiki">
 <pre>dfasdfsafasdf</pre>
+</div>
+<div created="20200723114115002" modified="20200723114119944" tags="" title="testsave">
+<pre></pre>
 </div>
 
 
@@ -9808,7 +9873,7 @@ https://www.youtube.com/watch?v=KJMekwILAJo</pre>
 
 <!--~~ Library modules ~~-->
 <div id="libraryModules" style="display:none;">
-<script data-tiddler-library="yes" data-tiddler-title="$:/library/sjcl.js" data-tiddler-type="application/javascript" data-tiddler-revision="0" data-tiddler-bag="default" type="text/javascript">"use strict";var sjcl={cipher:{},hash:{},keyexchange:{},mode:{},misc:{},codec:{},exception:{corrupt:function(a){this.toString=function(){return"CORRUPT: "+this.message};this.message=a},invalid:function(a){this.toString=function(){return"INVALID: "+this.message};this.message=a},bug:function(a){this.toString=function(){return"BUG: "+this.message};this.message=a},notReady:function(a){this.toString=function(){return"NOT READY: "+this.message};this.message=a}}};
+<script data-tiddler-bag="default" data-tiddler-library="yes" data-tiddler-revision="0" data-tiddler-title="$:/library/sjcl.js" data-tiddler-type="application/javascript" type="text/javascript">"use strict";var sjcl={cipher:{},hash:{},keyexchange:{},mode:{},misc:{},codec:{},exception:{corrupt:function(a){this.toString=function(){return"CORRUPT: "+this.message};this.message=a},invalid:function(a){this.toString=function(){return"INVALID: "+this.message};this.message=a},bug:function(a){this.toString=function(){return"BUG: "+this.message};this.message=a},notReady:function(a){this.toString=function(){return"NOT READY: "+this.message};this.message=a}}};
 sjcl.cipher.aes=function(a){this.s[0][0][0]||this.O();var b,c,d,e,f=this.s[0][4],g=this.s[1];b=a.length;var h=1;if(4!==b&&6!==b&&8!==b)throw new sjcl.exception.invalid("invalid aes key size");this.b=[d=a.slice(0),e=[]];for(a=b;a<4*b+28;a++){c=d[a-1];if(0===a%b||8===b&&4===a%b)c=f[c>>>24]<<24^f[c>>16&255]<<16^f[c>>8&255]<<8^f[c&255],0===a%b&&(c=c<<8^c>>>24^h<<24,h=h<<1^283*(h>>7));d[a]=d[a-b]^c}for(b=0;a;b++,a--)c=d[b&3?a:a-4],e[b]=4>=a||4>b?c:g[0][f[c>>>24]]^g[1][f[c>>16&255]]^g[2][f[c>>8&255]]^g[3][f[c&
 255]]};
 sjcl.cipher.aes.prototype={encrypt:function(a){return t(this,a,0)},decrypt:function(a){return t(this,a,1)},s:[[[],[],[],[],[]],[[],[],[],[],[]]],O:function(){var a=this.s[0],b=this.s[1],c=a[4],d=b[4],e,f,g,h=[],k=[],l,n,m,p;for(e=0;0x100>e;e++)k[(h[e]=e<<1^283*(e>>7))^e]=e;for(f=g=0;!c[f];f^=l||1,g=k[g]||1)for(m=g^g<<1^g<<2^g<<3^g<<4,m=m>>8^m&255^99,c[f]=m,d[m]=f,n=h[e=h[l=h[f]]],p=0x1010101*n^0x10001*e^0x101*l^0x1010100*f,n=0x101*h[m]^0x1010100*m,e=0;4>e;e++)a[e][f]=n=n<<24^n>>>8,b[e][m]=p=p<<24^p>>>8;for(e=
@@ -9872,7 +9937,7 @@ b){var c={},d;for(d=0;d<b.length;d++)void 0!==a[b[d]]&&(c[b[d]]=a[b[d]]);return 
 </div>
 <!--~~ Boot kernel prologue ~~-->
 <div id="bootKernelPrefix" style="display:none;">
-<script data-tiddler-title="$:/boot/bootprefix.js" data-tiddler-type="application/javascript" data-tiddler-revision="0" data-tiddler-bag="default" type="text/javascript">/*\
+<script data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/bootprefix.js" data-tiddler-type="application/javascript" type="text/javascript">/*\
 title: $:/boot/bootprefix.js
 type: application/javascript
 
@@ -9995,7 +10060,7 @@ if(typeof(exports) === "undefined") {
 </div>
 <!--~~ Boot kernel ~~-->
 <div id="bootKernel" style="display:none;">
-<script data-tiddler-title="$:/boot/boot.js" data-tiddler-type="application/javascript" data-tiddler-revision="0" data-tiddler-bag="default" type="text/javascript">/*\
+<script data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/boot.js" data-tiddler-type="application/javascript" type="text/javascript">/*\
 title: $:/boot/boot.js
 type: application/javascript
 
